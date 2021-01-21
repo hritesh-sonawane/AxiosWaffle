@@ -1,0 +1,49 @@
+.NewPost {
+  width: 400px;
+  margin: 20px auto;
+  border: 1px solid silver;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0px 1px 3px darkgrey;
+  transition: 0.2s;
+}
+
+.NewPost:hover {
+  transition: 0.2s;
+  box-shadow: 0px 1px 9px darkgrey;
+}
+
+.NewPost label {
+  display: block;
+  margin: 10px auto;
+  text-align: center;
+  font-weight: bold;
+}
+
+.NewPost input,
+.NewPost textarea,
+.NewPost select {
+  display: block;
+  width: 80%;
+  box-sizing: border-box;
+  border: 1px solid black;
+  outline: none;
+  font: inherit;
+  margin: auto;
+}
+
+.NewPost button {
+  margin: 10px 0;
+  padding: 10px;
+  font: inherit;
+  border: 1px solid #fa923f;
+  background-color: transparent;
+  color: #fa923f;
+  cursor: pointer;
+}
+
+.NewPost button:hover,
+.NewPost button:active {
+  color: white;
+  background-color: #fa923f;
+}
