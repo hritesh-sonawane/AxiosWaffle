@@ -1,4 +1,4 @@
-### Http-Ajax-Waffle
+### Http-Ajax-Axios
 ```
-React HTTP AJAX sessions?
+React HTTP AJAX AXIOS sessions?
 ```
