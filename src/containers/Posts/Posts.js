@@ -4,14 +4,13 @@ import axios from '../../axios';
 import './Posts.css';
 
 class Posts extends Component {
-
   state = {
     posts: []
   }
 
   componentDidMount() {
     console.log(this.props);
-    
+
     axios.get('/posts')
       .then(response => {
         const posts = response.data.slice(0, 4);
@@ -41,7 +40,7 @@ class Posts extends Component {
         return <Post 
                   title={post.title}
                   author={post.author}
-                  key={post.id}
+                  {...this.props}
                   clicked={() => this.postSelectedHandler(post.id)} 
                 />
       });
