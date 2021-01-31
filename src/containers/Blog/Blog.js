@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './Blog.css';
 // import axios from '../../axios';
 import Posts from '../Posts/Posts';
-import { Route, Link } from 'react-router-dom';
+import { Route, NavLink } from 'react-router-dom';
 import NewPost from '../NewPost/NewPost';
 
 class Blog extends Component {
@@ -12,12 +12,19 @@ class Blog extends Component {
         <header>
           <nav>
             <ul>
-              <li><Link to="/">Home</Link></li>
-              <li><Link to={{
-                pathname: this.props.match.url + '/new-post',   // for relative path, app breaks for now
+              <li><NavLink 
+                to="/"
+                exact
+                activeClassName="my-active"
+                activeStyle={{
+                  textDecoration: 'underline',
+                  color: 'orange'
+                }}>Home</NavLink></li>
+              <li><NavLink to={{
+                pathname: '/new-post',
                 hash: '#submit',
                 search: '?quick-submit=true'
-              }}>New Post</Link></li>
+              }}>New Post</NavLink></li>
             </ul>
           </nav>
         </header>
