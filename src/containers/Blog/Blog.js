@@ -14,13 +14,13 @@ class Blog extends Component {
           <nav>
             <ul>
               <li><NavLink 
-                to="/"
+                to="/"   // styling root path is tricky :(
                 exact
                 activeClassName="my-active"
                 activeStyle={{
                   textDecoration: 'underline',
                   color: 'orange'
-                }}>Home</NavLink></li>
+                }}>Posts</NavLink></li>
               <li><NavLink to={{
                 pathname: '/new-post',
                 hash: '#submit',
