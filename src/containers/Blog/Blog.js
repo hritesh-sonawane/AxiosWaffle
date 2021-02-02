@@ -23,8 +23,8 @@ class Blog extends Component {
                 }}>Posts</NavLink></li>
               <li><NavLink to={{
                 pathname: '/new-post',
-                hash: '#submit',
-                search: '?quick-submit=true'
+                hash: '#hahahah',
+                // search: '?quick-submit=true'
               }}>New Post</NavLink></li>
             </ul>
           </nav>
