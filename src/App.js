@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
-import Blog from './containers/Blog/Blog';
 import { BrowserRouter } from 'react-router-dom';
+import Blog from './containers/Blog/Blog';
 
 class App extends Component {
-  render() {
+  render () {
     return (
+      // <BrowserRouter basename="/my-app">
       <BrowserRouter>
         <div className="App">
           <Blog />
